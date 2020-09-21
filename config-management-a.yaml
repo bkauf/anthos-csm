@@ -6,7 +6,7 @@ metadata:
   name: config-management
 spec:
   # clusterName is required and must be unique among all managed clusters
-  clusterName: external-cluster
+  clusterName: external-cluster-a
   git:
     syncRepo: https://github.com/bkauf/anthos-csm/
     secretType: none
