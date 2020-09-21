@@ -8,9 +8,7 @@ spec:
   # clusterName is required and must be unique among all managed clusters
   clusterName: external-cluster
   git:
-    #syncRepo: git@github.com:bkauf/anthos-clusters.git
-    #syncRepo: https://github.com/bkauf/anthos-clusters
-    syncRepo: https://github.com/bkauf/csp-config-management/
+    syncRepo: https://github.com/bkauf/anthos-csm/
     secretType: none
-    policyDir: "foo-corp"
+    policyDir: "acme.org"
     syncBranch: 1.0.0
