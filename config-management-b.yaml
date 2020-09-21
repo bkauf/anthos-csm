@@ -1,0 +1,16 @@
+# config-management.yaml
+
+apiVersion: configmanagement.gke.io/v1
+kind: ConfigManagement
+metadata:
+  name: config-management
+spec:
+  # clusterName is required and must be unique among all managed clusters
+  clusterName: external-cluster-b
+  git:
+    #syncRepo: git@github.com:bkauf/anthos-clusters.git
+    #syncRepo: https://github.com/bkauf/anthos-clusters
+    syncRepo: https://github.com/bkauf/csp-config-management/
+    secretType: none
+    policyDir: "foo-corp"
+    syncBranch: 1.0.0

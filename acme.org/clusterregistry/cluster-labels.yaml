@@ -1,0 +1,13 @@
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: external-cluster-a
+  labels:
+    environment: prod
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: external-cluster-b
+  labels:
+    environment: dev
